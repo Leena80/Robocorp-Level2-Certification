@@ -49,9 +49,7 @@ Close the annoying modal
     Click Button    OK
 
 Get orders
-    #[Arguments]    ${url}
     Download    https://robotsparebinindustries.com/orders.csv    overwrite=True
-    #Download    ${url}    overwrite=True    target_file=downloads/orders.csv
     @{orders}=    Read table from CSV    orders.csv    header=True
     [Return]    @{orders}
 
