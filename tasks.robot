@@ -113,6 +113,6 @@ Success dialog
 
 Input zip name
     Add heading    Zip file name
-    Add text input    zipfilename    label=File name    placeholder=Enter filename
+    Add text input    zipfilename    label=File name    placeholder=Enter zip filename
     ${result}=    Run dialog
     [Return]    ${result.zipfilename}
